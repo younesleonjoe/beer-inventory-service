@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=beer_inventory'
+      - 'MYSQL_PASSWORD=secret'
+      - 'MYSQL_ROOT_PASSWORD=very_secret'
+      - 'MYSQL_USER=db_user'
+    ports:
+      - '4000:3306'
